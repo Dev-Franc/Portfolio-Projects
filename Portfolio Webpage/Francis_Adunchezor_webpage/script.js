@@ -9,9 +9,9 @@ const RESUME_LINK = "Resume/Francis_Adunchezor_Resume.pdf";
 // ---------------------------
 const projectsData = [
 {
-    title: "Sales Forecasting Dashboard",
-    description: "Forecasting and dashboard for monthly sales.",
-    tools: ["Python", "Tableau"],
+    title: "Marketing Analysis Dashboard",
+    description: "Analyse and design a dashboard for a marketing campaign sales.",
+    tools: ["Excel"],
     thumbnail: "[Project Screenshot Here]",
     link: "[GitHub Link]"
 },
