@@ -1,0 +1,18 @@
+/* Custom styles */
+
+/* Keyboard focus outline */
+:focus {
+outline: 3px solid rgba(6,182,212,0.18);
+outline-offset: 2px;
+}
+
+/* Reveal on scroll animation */
+.reveal {
+opacity: 0;
+transform: translateY(12px);
+transition: opacity 520ms ease, transform 520ms ease;
+}
+.reveal.visible {
+opacity: 1;
+transform: translateY(0);
+}

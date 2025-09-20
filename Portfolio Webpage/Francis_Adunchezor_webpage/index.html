@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Portfolio of Francis Adunchezor — Data Analyst" />
+
+<title>Francis Adunchezor — Data Analyst</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+    theme: {
+        extend: {
+        colors: {
+            primary: '#0F172A',
+            accent: '#06B6D4',
+            muted: '#64748B',
+            card: '#F8FAFC'
+        },
+        fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            serif: ['Source Serif 4', 'serif']
+        },
+        }
+    }
+    }
+</script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white text-primary antialiased leading-relaxed">
+<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+
+    <!-- HEADER -->
+    <header class="flex items-center justify-between py-6">
+    <a href="#top" class="flex items-center gap-3">
+        <div class="rounded-full w-10 h-10 bg-accent/10 flex items-center justify-center text-accent font-bold">DA</div>
+        <div class="text-lg font-semibold">Francis Adunchezor</div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#experience" class="hover:underline">Resume</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <div class="md:hidden">
+        <button id="mobileNavBtn" class="p-2 rounded-md">
+        <span class="sr-only">Open menu</span>
+        <svg id="burger" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+        </svg>
+        </button>
+    </div>
+    </header>
+
+    <div id="mobileNav" class="md:hidden hidden">
+    <a href="#projects" class="block py-2">Projects</a>
+    <a href="#experience" class="block py-2">Resume</a>
+    <a href="#contact" class="block py-2">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <main id="top" class="pt-6 pb-12">
+    <section class="grid gap-8 lg:grid-cols-2 items-center">
+        <div>
+        <p class="text-accent font-medium">Hello — I’m</p>
+        <h1 class="mt-2 text-4xl font-extrabold">
+            Francis Adunchezor
+            <span class="block text-xl font-medium text-muted mt-2">Data Analyst</span>
+        </h1>
+    <!-- ABOUT -->
+    <section id="about" class="mt-12 reveal">
+    <h2 class="text-2xl font-bold">About Me</h2>
+    <p class="text-muted mt-4">I specialize in transforming complex data into actionable insights through data analysis, visualization, and storytelling. With a strong foundation in statistics and proficiency in tools like SQL, Python, and PowerBi, I help organizations make informed decisions and drive business growth.</p>
+    </section>
+        <p class="mt-6 text-base text-muted max-w-xl">
+            Data Analyst | SQL | Python | PowerBi | Excel
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#projects" class="px-5 py-3 bg-accent text-white rounded-md shadow">View My Work</a>
+            <a href="Resume\Francis_Adunchezor_Resume.pdf" download class="px-5 py-3 border rounded-md">Download Resume</a>
+        </div>
+        </div>
+
+        <!-- Hero image placeholder -->
+        <div class="flex justify-center lg:justify-end">
+        <img src="img\Screenshot 2025-01-31 061453.png" alt="My Profil Picture" class="w-full max-w-md rounded-lg shadow-lg"/>
+        </div>
+    </section>
+    </main>
+
+    
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mt-16 reveal">
+    <h2 class="text-2xl font-bold">Projects</h2>
+    <div id="projectsGrid" class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="mt-16 reveal">
+    <h2 class="text-2xl font-bold">Resume / Experience</h2>
+    <p class="text-muted mt-4">[Add education, jobs, and achievements]</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-16 reveal">
+    <h2 class="text-2xl font-bold">Contact</h2>
+    <form id="contactForm" class="mt-6 space-y-4">
+        <input id="name" name="name" placeholder="Your Name" class="w-full border rounded-md px-3 py-2"/>
+        <input id="email" name="email" type="email" placeholder="Your Email" class="w-full border rounded-md px-3 py-2"/>
+        <textarea id="message" name="message" rows="4" placeholder="Message" class="w-full border rounded-md px-3 py-2"></textarea>
+        <button type="submit" class="px-4 py-2 bg-accent text-white rounded-md">Send</button>
+    </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-16 py-8 border-t text-sm text-muted text-center">
+    © <span id="year"></span> Francis Adunchezor. All rights reserved.
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
